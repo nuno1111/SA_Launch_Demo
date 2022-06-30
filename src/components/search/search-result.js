@@ -13,9 +13,33 @@ import {
 } from "@mui/material";
 import { SeverityPill } from "../severity-pill";
 
+const rights = [ 
+  {
+    value: 'Portability',
+    label: '개인(신용)정보 정정'
+  },
+  {
+    value: 'Erasure',
+    label: '개인(신용)정보 삭제'
+  },
+  {
+    value: 'Stop',
+    label: '개인(신용)정보 처리정지'
+  },
+  {
+    value: 'Withdraw',
+    label: '개인(신용)정보 동의철회'
+  }
+];
+
 export const SearchResult = ({ loading, resultData, ...props }) => {
 
-  console.log(resultData);
+  let rightLabel = '';
+
+  if ( resultData.Rights !== '' ) {
+    const rightList = rights.filter(right => right.value === resultData.Rights);
+    rightLabel = rightList[0].label;
+  }
 
   return (
     <Card {...props}>
@@ -45,7 +69,7 @@ export const SearchResult = ({ loading, resultData, ...props }) => {
                 </TableRow>
                 <TableRow>
                   <TableCell>Rights</TableCell>
-                  <TableCell>{resultData.Rights}</TableCell>  
+                  <TableCell>{ rightLabel }</TableCell>  
                 </TableRow>
                 <TableRow>
                   <TableCell>Requested</TableCell>

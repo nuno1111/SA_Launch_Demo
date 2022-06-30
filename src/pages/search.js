@@ -11,6 +11,7 @@ import { SearchResult } from "../components/search/search-result";
 const POC = () => {
   // const [imgUrl, setImgUrl] = useState("/static/images/upload-files.jpg");
   const [resultData, setResultData] = useState({
+    "Rights":'',
     "Tasks":[]
   });
 

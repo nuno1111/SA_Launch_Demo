@@ -39,13 +39,13 @@ export const ImageAnalysis = ({ loading, resultData, ...props }) => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell>RegId</TableCell>
-                  <TableCell>{resultData.regId}</TableCell>  
+                  <TableCell>UserId</TableCell>
+                  <TableCell>{resultData.userId}</TableCell>  
                 </TableRow>
 
                 <TableRow>
-                  <TableCell>UserId</TableCell>
-                  <TableCell>{resultData.userId}</TableCell>  
+                  <TableCell>RegId</TableCell>
+                  <TableCell>{resultData.regId}</TableCell>  
                 </TableRow>
                 
               
