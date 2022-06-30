@@ -29,8 +29,10 @@ const rights = [
 export const ImageDetect = ({ setResultData, ...props }) => {
 
   const [values, setValues] = useState({
-    email: 'dhoon@amazon.com',
+    email: '',
+    userId: '',
     rights: 'Portability'
+
   });
 
   const handleChange = (event) => {
@@ -53,7 +55,7 @@ export const ImageDetect = ({ setResultData, ...props }) => {
     //   // 서비스신청 정보 서버통신
     //   setLoading(true);
 
-    const reqUrl = '/Prod/mydata/blkiocjkakld';
+    const reqUrl = '/Prod/mydata/'+values.userId;
     const params = JSON.stringify({
       "email": values.email,       
       "rights": values.rights,
@@ -105,6 +107,22 @@ export const ImageDetect = ({ setResultData, ...props }) => {
                 variant="outlined"
               />
             </Grid>
+
+            <Grid
+              item
+              md={12}
+              xs={12}
+            >
+              <TextField
+                fullWidth
+                label="UserId"
+                name="userId"
+                onChange={handleChange}
+                required
+                value={values.userId}
+                variant="outlined"
+              />
+            </Grid>
           
             <Grid
               item
@@ -133,6 +151,8 @@ export const ImageDetect = ({ setResultData, ...props }) => {
               </TextField>
               
             </Grid>
+
+
             
           </Grid>
         </CardContent>

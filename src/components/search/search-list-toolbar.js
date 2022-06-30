@@ -1,6 +1,6 @@
 import { Box, Button, CIcon, Typography } from "@mui/material";
 
-export const POCListToolbar = ({ ...props }) => {
+export const SearhListToolbar = ({ ...props }) => {
 
   return (
     <Box {...props}>
@@ -14,7 +14,7 @@ export const POCListToolbar = ({ ...props }) => {
         }}
       >
         <Typography sx={{ m: 1 }} variant="h4">
-          개인정보 입력
+          개인정보 조회
         </Typography>
         
       </Box>
