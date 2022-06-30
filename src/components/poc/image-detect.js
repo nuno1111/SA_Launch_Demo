@@ -18,11 +18,19 @@ import {
 const rights = [ 
   {
     value: 'Portability',
-    label: 'Portability'
+    label: '개인(신용)정보 정정'
   },
   {
     value: 'Erasure',
-    label: 'Erasure'
+    label: '개인(신용)정보 삭제'
+  },
+  {
+    value: 'Stop',
+    label: '개인(신용)정보 처리정지'
+  },
+  {
+    value: 'Withdraw',
+    label: '개인(신용)정보 동의철회'
   }
 ];
 
@@ -83,7 +91,7 @@ export const ImageDetect = ({ setResultData, ...props }) => {
   return (
     <Card {...props}>
       <CardHeader
-          subheader="데이터 입력 후 Save 버튼을 누르세요!"
+          subheader="요청하실 권리 선택 및 아이디(ID) 그리고 통지 받으실 이메일 주소를 입력하세요."
           title="Profile"
         />
         <Divider />

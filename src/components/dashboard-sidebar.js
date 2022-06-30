@@ -17,12 +17,12 @@ const items = [
   {
     href: "/",
     icon: <LockIcon fontSize="small" />,
-    title: "개인정보입력",
+    title: "요구권 및 정보 입력",
   },
   {
     href: "/search",
     icon: <UserIcon fontSize="small" />,
-    title: "개인정보조회",
+    title: "처리현황 조회",
   },
 ];
 
@@ -95,7 +95,7 @@ export const DashboardSidebar = (props) => {
                   SA Launch 2조
                 </Typography>
                 <Typography color="neutral.400" variant="body2">
-                  데이터 주권 데모
+                  데이터 주권 관리 시스템
                 </Typography>
               </div>
               {/* <SelectorIcon

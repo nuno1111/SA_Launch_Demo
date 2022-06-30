@@ -14,7 +14,7 @@ export const POCListToolbar = ({ ...props }) => {
         }}
       >
         <Typography sx={{ m: 1 }} variant="h4">
-          개인정보 입력
+          요구 권리 및 정보 입력
         </Typography>
         
       </Box>

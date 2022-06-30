@@ -14,7 +14,7 @@ export const SearhListToolbar = ({ ...props }) => {
         }}
       >
         <Typography sx={{ m: 1 }} variant="h4">
-          개인정보 조회
+          처리현황 조회
         </Typography>
         
       </Box>
