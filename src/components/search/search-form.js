@@ -29,7 +29,7 @@ const rights = [
 export const SearchForm = ({ setResultData, ...props }) => {
 
   const [values, setValues] = useState({
-    regId: '2710f226e0'
+    regId: ''
   });
 
   const handleChange = (event) => {
